@@ -16,7 +16,7 @@ if not os.path.isfile(audio_path):
     sys.exit(1)
 
 # Load Whisper model
-model = whisper.load_model("base")
+model = whisper.load_model("small")
 
 # Transcribe
 print(f"Transcribing: {audio_path}")
