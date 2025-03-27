@@ -29,7 +29,7 @@ file_name = ntpath.basename(audio_path).removesuffix(".wav")
 AudioSegment.from_wav(audio_path).export(f"{file_name}.mp3", format="mp3")
 
 # Load Whisper model
-model = whisper.load_model("turbo")
+model = whisper.load_model("small")
 
 # Transcribe
 print(f"Transcribing: {audio_path}")
